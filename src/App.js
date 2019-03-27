@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, {Component} from 'react';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        阿斯顿发斯蒂芬
-      </div>
-    );
-  }
+    render() {
+        return <div>{this.props.children}</div>;
+    }
 }
 
 export default App;
