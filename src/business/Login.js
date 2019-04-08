@@ -3,12 +3,12 @@
 */
 
 import React, {Component} from 'react';
-import loginStyle from '../assets/stylus/login.styl';
+import '../assets/sass/login.scss';
 
 class Login extends Component {
 	render() {
 		return (
-			<div className={loginStyle.login}>
+			<div className="login">
 				登录到此页面
 			</div>
 		);
