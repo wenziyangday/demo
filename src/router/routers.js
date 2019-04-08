@@ -5,6 +5,7 @@ import App from '../App';
 import Test from '../components/Test';
 import Home from '../components/Home';
 import Message from '../components/Message';
+import Login from '../business/Login';
 
 const Root = () => (
 	<div>
@@ -16,6 +17,7 @@ const Root = () => (
 						<Route path="/home" component={Home}/>
 						<Route path="/test" component={Test}/>
 						<Route path="/message/:id" component={Message}/>
+						<Route path="/login" component={Login}/>
 						<Route render={() => <Redirect to="/"/>}/>
 					</Switch>
 				</App>
