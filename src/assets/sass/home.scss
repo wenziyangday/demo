@@ -6,6 +6,8 @@
 	.router-view {
 		height: 100%;
 		margin-left: 300px;
-		background: #ff0;
+		.inner-container {
+			padding: 0 20px 20px;
+		}
 	}
 }

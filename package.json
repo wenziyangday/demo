@@ -68,6 +68,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "axios": "^0.18.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2"
   },
@@ -120,5 +121,11 @@
     "presets": [
       "react-app"
     ]
+  },
+  "proxy": {
+    "/api": {
+      "target": "",
+      "changeOrgin": true
+    }
   }
 }
