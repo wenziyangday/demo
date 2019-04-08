@@ -2,13 +2,12 @@ import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 
 import App from '../App';
-import Test from '../components/Test';
-import Home from '../components/Home';
-import Message from '../components/Message';
+import Test from '../business/Test';
+import Home from '../layout/Home';
+import Message from '../business/Message';
 import Login from '../business/Login';
 
 const Root = () => (
-	<div>
 		<Switch>
 			<Route path="/" render={props => (
 				<App>
@@ -23,7 +22,6 @@ const Root = () => (
 				</App>
 			)}/>
 		</Switch>
-	</div>
 );
 
 export default Root;
