@@ -1,4 +1,6 @@
 @import "./assets/css/reset.css";
+@import "~antd/dist/antd.min.css";
+
 #root, #root > div {
 	position: relative;
 	width: 100%;
