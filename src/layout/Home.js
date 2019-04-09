@@ -9,13 +9,19 @@ import Sidebar from './Sidebar';
 import Breadcrumb from "./Breadcrumb";
 import Welcome from "../components/Welcome";
 import NoState from "../components/NoState";
+import Events from "../components/Events";
 
 
 class Home extends Component {
 	render() {
 		return (
 			<div className="home-container">
-				<Sidebar/>
+				<Sidebar>
+					asdfasdfasdfas
+					<div style={{background: '#ff0000'}}>
+						asdfasdfasdf
+					</div>
+				</Sidebar>
 
 				<div className="router-view">
 					<Breadcrumb/>
@@ -31,6 +37,8 @@ class Home extends Component {
 						<b>常规组件之间的数据传输就是 父子组件信息传输</b> <br/>
 						<Welcome name="1.有状态组件"/>
 						<NoState name="2.无状态组件"/>
+
+						<Events/>
 					</div>
 
 				</div>
